@@ -7,6 +7,7 @@ files: list[str] = ['dog.txt', 'science.txt','computer.txt']
 all_lines: list[str] = []
 for filename in files:
     with open(filename, "r") as file:
+
         while (line := file.readline()):
              all_lines.append(line.strip())
 
